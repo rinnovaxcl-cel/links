@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Enlaces</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px 16px;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+    .profile-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .profile-bio {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin-bottom: 28px;
+    }
+    .links-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .link-button {
+      display: block;
+      background-color: #1e293b;
+      color: #f8fafc;
+      text-decoration: none;
+      padding: 16px 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 1px solid #334155;
+      transition: all 0.2s ease;
+    }
+    .link-button:hover, .link-button:active {
+      background-color: #334155;
+      transform: translateY(-2px);
+    }
+    .footer {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="profile-title">Mi Catálogo y Contacto</h1>
+    <p class="profile-bio">Selecciona una de las siguientes opciones:</p>
+
+    <div class="links-group">
+      <!-- Reemplaza los enlaces (href) y textos según tus necesidades -->
+      <a href="https://wa.me/569XXXXXXXX" target="_blank" class="link-button">💬 WhatsApp Directo</a>
+      <a href="https://instagram.com/tu_cuenta" target="_blank" class="link-button">📸 Instagram</a>
+      <a href="https://catalogo-o-web.com" target="_blank" class="link-button">🌐 Catálogo Web</a>
+      <a href="https://drive.google.com/..." target="_blank" class="link-button">📄 Ficha Técnica / Lista de Precios</a>
+    </div>
+
+    <div class="footer">
+      Escaneado vía NFC
+    </div>
+  </div>
+</body>
+</html>
