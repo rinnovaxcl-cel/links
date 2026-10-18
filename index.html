@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis Enlaces</title>
+  <title>Accesos Rápidos y Formularios</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,7 +12,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
     body {
-      background-color: #0f172a;
+      background-color: #0b132b;
       color: #f8fafc;
       display: flex;
       justify-content: center;
@@ -22,18 +22,20 @@
     }
     .container {
       width: 100%;
-      max-width: 420px;
+      max-width: 440px;
       text-align: center;
     }
     .profile-title {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-weight: 700;
       margin-bottom: 8px;
+      color: #ffffff;
+      letter-spacing: -0.3px;
     }
     .profile-bio {
       font-size: 0.95rem;
       color: #94a3b8;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
     }
     .links-group {
       display: flex;
@@ -41,23 +43,34 @@
       gap: 14px;
     }
     .link-button {
-      display: block;
-      background-color: #1e293b;
-      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #1c2541;
+      color: #ffffff;
       text-decoration: none;
       padding: 16px 20px;
       border-radius: 12px;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 600;
-      border: 1px solid #334155;
+      border: 1px solid #3a506b;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25);
       transition: all 0.2s ease;
+      text-align: left;
+    }
+    .link-button span.icon {
+      font-size: 1.35rem;
+      margin-right: 14px;
+      display: inline-block;
+      flex-shrink: 0;
     }
     .link-button:hover, .link-button:active {
-      background-color: #334155;
+      background-color: #3a506b;
       transform: translateY(-2px);
+      box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.35);
     }
     .footer {
-      margin-top: 32px;
+      margin-top: 30px;
       font-size: 0.8rem;
       color: #64748b;
     }
@@ -65,19 +78,37 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="profile-title">Mi Catálogo y Contacto</h1>
-    <p class="profile-bio">Selecciona una de las siguientes opciones:</p>
+    <h1 class="profile-title">Portal de Operaciones</h1>
+    <p class="profile-bio">Selecciona el formulario o sistema a ingresar:</p>
 
     <div class="links-group">
-      <!-- Reemplaza los enlaces (href) y textos según tus necesidades -->
-      <a href="https://wa.me/569XXXXXXXX" target="_blank" class="link-button">💬 WhatsApp Directo</a>
-      <a href="https://instagram.com/tu_cuenta" target="_blank" class="link-button">📸 Instagram</a>
-      <a href="https://catalogo-o-web.com" target="_blank" class="link-button">🌐 Catálogo Web</a>
-      <a href="https://drive.google.com/..." target="_blank" class="link-button">📄 Ficha Técnica / Lista de Precios</a>
+      <!-- 1. Reporte Salud Diario -->
+      <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=RR2fBB68PUe6-XYwgUVGsHvVeJ01pWdNnfmYYtrfjA9UNTRFWUtHUURUOVQ0OUFZOFNMTEZCRkYyTi4u&origin=QRCode" target="_blank" class="link-button">
+        <span class="icon">🩺</span>
+        <span>Reporte Salud Diario</span>
+      </a>
+
+      <!-- 2. Registro Neumáticos -->
+      <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=RR2fBB68PUe6-XYwgUVGsHvVeJ01pWdNnfmYYtrfjA9UNDBOWllLT01GR1dFQkJFWFMxUklDUUtTUS4u&route=shorturl" target="_blank" class="link-button">
+        <span class="icon">🛞</span>
+        <span>Registro Neumáticos</span>
+      </a>
+
+      <!-- 3. Check List Conducción -->
+      <a href="https://www.directic.cl/BeSafe/checklistpi/home.aspx" target="_blank" class="link-button">
+        <span class="icon">📋</span>
+        <span>Check List Conducción</span>
+      </a>
+
+      <!-- 4. EDC -->
+      <a href="https://www.directic.cl/Besafe/DirecticHome/frm_defaultDetalle.aspx?id_padre=844" target="_blank" class="link-button">
+        <span class="icon">🔍</span>
+        <span>EDC</span>
+      </a>
     </div>
 
     <div class="footer">
-      Escaneado vía NFC
+      Acceso vía Chip NFC
     </div>
   </div>
 </body>
